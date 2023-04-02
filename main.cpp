@@ -141,9 +141,7 @@ struct DoubleType
 
     double divide(double a, double b)
     {
-        if(b == 0.0
-            
-            )
+        if(b == 0.0)
         {
             std::cout << "warning, floating point division by zero returns 'inf' !"<<std::endl;
         }
