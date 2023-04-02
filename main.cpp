@@ -102,12 +102,12 @@ struct FloatType
 
     float subtract(float a, float b)
     {
-        return a-b;
+        return a - b;
     }
 
     float multiply(float a, float b)
     {
-        return a*b;
+        return a * b;
     }
 
     float divide(float a, float b)
@@ -116,7 +116,7 @@ struct FloatType
         {
             std::cout << "warning, floating point division by zero returns 'inf' !"<<std::endl;
         }
-        return a/b;
+        return a / b;
     }
 
     
@@ -126,17 +126,17 @@ struct DoubleType
 {
     double add(double a, double b)
     {
-        return a+b;
+        return a + b;
     }
 
     double subtract(double a, double b)
     {
-        return a-b;
+        return a - b;
     }
 
     double multiply(double a, double b)
     {
-        return a*b;
+        return a * b;
     }
 
     double divide(double a, double b)
@@ -147,7 +147,7 @@ struct DoubleType
         {
             std::cout << "warning, floating point division by zero returns 'inf' !"<<std::endl;
         }
-        return a/b;
+        return a / b;
     }
 };
 
@@ -155,17 +155,17 @@ struct IntType
 {
     int add(int a, int b)
     {
-        return a+b;
+        return a + b;
     }
 
     int subtract(int a, int b)
     {
-        return a-b;
+        return a - b;
     }
 
     int multiply(int a, int b)
     {
-        return a*b;
+        return a * b;
     }
 
     int divide(int a, int b)
@@ -176,7 +176,7 @@ struct IntType
             std::cout << "returning lhs"<<std::endl;
             return a;
         }
-        return a/b;
+        return a / b;
     }
 
 };
