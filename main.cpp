@@ -92,6 +92,92 @@ good to go!
  */
 
 #include <iostream>
+struct FloatType
+{
+
+    float add(float a, float b)
+    {
+        return a + b;
+    }
+
+    float subtract(float a, float b)
+    {
+        return a - b;
+    }
+
+    float multiply(float a, float b)
+    {
+        return a * b;
+    }
+
+    float divide(float a, float b)
+    {
+        if(b == 0.0f)
+        {
+            std::cout << "\nwarning, floating point division by zero returns 'inf' !" << std::endl;
+        }
+        return a / b;
+    }
+
+    
+};
+
+struct DoubleType 
+{
+    double add(double a, double b)
+    {
+        return a + b;
+    }
+
+    double subtract(double a, double b)
+    {
+        return a - b;
+    }
+
+    double multiply(double a, double b)
+    {
+        return a * b;
+    }
+
+    double divide(double a, double b)
+    {
+        if(b == 0.0)
+        {
+            std::cout << "\nwarning, floating point division by zero returns 'inf' !" << std::endl;
+        }
+        return a / b;
+    }
+};
+
+struct IntType
+{
+    int add(int a, int b)
+    {
+        return a + b;
+    }
+
+    int subtract(int a, int b)
+    {
+        return a - b;
+    }
+
+    int multiply(int a, int b)
+    {
+        return a * b;
+    }
+
+    int divide(int a, int b)
+    {
+        if(b == 0)
+        {
+            std::cout << "error, integer division by zero will crash the program!" << std::endl;
+            std::cout << "returning lhs" << std::endl;
+            return a;
+        }
+        return a / b;
+    }
+
+};
 int main() 
 {
     FloatType ft;
@@ -129,5 +215,7 @@ int main()
 
     std::cout << "good to go!" << std::endl;
 }
+
+
 
 
